@@ -1,0 +1,43 @@
+baseURL = "http://yourdomain.com"
+languageCode = "en-us"
+title = "HugoTest"
+theme = "mediumish"
+summaryLength = 25
+copyright = "Hellotickets - All rights reserved"
+enableEmoji = true
+disqusShortname = "shortDisquis"
+googleAnalytics = "UA-1XXXXXXX1-X"
+
+# General Parameters
+[params]
+logo = "/images/hellotickets-logo.png"
+description ="This is a test Hugo blog built the ground-up"
+mailchimp = "you can provide a mailchimp-link here, see below"
+mailprotect = "you can provide a protector-name here, see below"
+
+# Landing Page Parameters
+[params.index]
+  picture = "/images/screenshot.png"
+  title = "Hellotickets Content Blog"
+  subtitle = "I'm a unique placeholder. Working here and there!"
+  mdtext = '''Currently trying to get this blog running, still don't know what the blog will be about!\
+**This textblock is a demonstration of the mdtext-param.**\
+### This is a markdown heading'''
+  alertbar = true
+
+  ## Main Menu Navbar
+  [[menu.main]]
+      name = "Blog"
+      weight = 100
+      identifier = "blog"
+      url = "/blog"
+  [[menu.main]]
+      name = "About Us"
+      identifier = "about"
+      weight = 200
+      url = "/static/about"
+  [[menu.main]]
+      name = "Contact"
+      identifier = "contact"
+      weight = 200
+      url = "/static/contact"
