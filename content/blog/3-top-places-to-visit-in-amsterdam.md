@@ -6,7 +6,6 @@ image: /images/uploads/amsterdamcanal4.jpg
 tags:
   - Amsterdam
   - attractions
-  - ''
 comments: false
 ---
 ## The Canals
