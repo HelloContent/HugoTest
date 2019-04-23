@@ -1,5 +1,6 @@
 ---
 title: "About Us"
+description: "Our core Values"
 url: "/about"
 date: 2018-10-07T11:12:00+02:00
 ---

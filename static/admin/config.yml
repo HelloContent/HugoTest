@@ -1,22 +1,37 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-
+  accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
 publish_mode: editorial_workflow
 media_folder: "/static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
+    label: "Blog Posts" # Used in the UI
     folder: "content/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Creation Date", name: "date", widget: "datetime"}
+      - {label: "MetaDescription", name: "description", widget: "text",  pattern: [".{150}", "Must have no more than 150 characters"]}      
+      - {label: "Creation Date", name: "date", widget: "hidden"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "image", widget: "image"}
       - {label: "Tags", name: "tag", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Accepting Comments", name: "comments", widget: "boolean"}
-      - {label: "Draft Post", name: "draft", widget: "boolean"}
+
+  - name: "static" # Used in routes, e.g., /admin/collections/blog
+    label: "Pages" # Used in the UI
+    folder: "content/static" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "MetaDescription", name: "description", widget: "text",  pattern: [".{150}", "Must have no more than 150 characters"]}
+      - {label: "Permalink", name: "url", widget: "string"}
+      - {label: "Date", name: "date", widget: "hidden"}
+      - {label: "Body", name: "body", widget: "markdown"}

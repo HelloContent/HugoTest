@@ -1,5 +1,6 @@
 ---
 title: "Contact Us"
+description: "Find out how you can contact us"
 url: "/contact"
 date: 2018-10-07T11:12:00+02:00
 ---
