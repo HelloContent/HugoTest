@@ -22,6 +22,7 @@ mailprotect = "you can provide a protector-name here, see below"
   subtitle = "I'm a unique placeholder. Working here and there!"
   mdtext = '''Currently trying to get this blog running, still don't know what the blog will be about!\
               ### This is a markdown heading'''
+  alertPhrase = "&nbsp; Never miss a <b>deal</b>, subscribe to our newsletter"
   alertbar = true
 
   ## Main Menu Navbar
