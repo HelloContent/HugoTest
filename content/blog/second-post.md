@@ -2,7 +2,7 @@
 title: First Post
 date: 2018-10-07T09:39:10.000Z
 image: /images/uploads/amsterdamcanal1.jpg
-tag:
+tags:
   - Test
   - Interesting
 comments: false

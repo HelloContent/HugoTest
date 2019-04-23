@@ -3,7 +3,7 @@ title: Top 3 Places to Visit in Amsterdam
 description: Check out the top 3 attractions in Amsterdam
 date: 2019-04-23T12:57:42.691Z
 image: /images/uploads/amsterdamcanal4.jpg
-tag:
+tags:
   - Amsterdam
   - attractions
   - ''
