@@ -5,11 +5,11 @@
 	<div class="container text-center">
         <span>
             {{ if isset .Site.Params "logo" }}
-                <img src="{{ .Site.Params.logo | urlize | relURL }}" alt="logo">
+                <img src="{{ .Site.Params.logo | urlize | relURL }}" alt="logo" style="height:32px;">
             {{ else }}
-                <span style="font-family:Righteous;">{{.Site.Title}}</span>
+                <span style="font-family:Asap;">{{.Site.Title}}</span>
             {{ end }}
-            &nbsp; Never miss a <b>story</b>, subscribe to our newsletter
+            &nbsp; Never miss a <b>deal</b>, subscribe to our newsletter
         </span>
 
         <form action="{{ with .Site.Params.mailchimp }}{{.}}{{end}}" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>

@@ -1,4 +1,4 @@
-baseURL = "http://yourdomain.com"
+baseURL = ""
 languageCode = "en-us"
 title = "HugoTest"
 theme = "mediumish"
@@ -35,9 +35,9 @@ mailprotect = "you can provide a protector-name here, see below"
       name = "About Us"
       identifier = "about"
       weight = 200
-      url = "/static/about"
+      url = "/about"
   [[menu.main]]
       name = "Contact"
       identifier = "contact"
       weight = 200
-      url = "/static/contact"
+      url = "/contact"

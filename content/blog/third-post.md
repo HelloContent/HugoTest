@@ -1,9 +1,9 @@
 ---
-title: "First Post"
+title: "Second Post"
 date: 2018-10-07T11:39:10+02:00
 publishdate: 2018-10-07T11:39:10+02:00
 image: "/images/screenshot.png"
-tags: ["Test","Interesting"]
+tags: ["2nd","Not Interesting"]
 comments: false
 ---
 # This is another post
